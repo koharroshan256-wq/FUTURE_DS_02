@@ -37,7 +37,10 @@ const Index = () => {
             </div>
             <div>
               <h1 className="text-lg font-bold text-card-foreground tracking-tight">Customer Retention & Churn Analysis</h1>
-              <p className="text-xs text-muted-foreground">Subscription Business Dashboard • 1,000 Customers</p>
+              <p className="text-xs text-muted-foreground">
+                Subscription Business Dashboard •{" "}
+                <Link to="/marketing-funnel" className="underline hover:text-foreground transition-colors">Marketing Funnel →</Link>
+              </p>
             </div>
           </div>
           <DashboardFilters
