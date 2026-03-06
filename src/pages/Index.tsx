@@ -4,6 +4,7 @@ import { KPIGrid } from "@/components/KPICards";
 import { ChurnByPlanChart, ChurnPieChart, RetentionLineChart, ChurnByCountryChart, FunnelChartDisplay } from "@/components/Charts";
 import { DashboardFilters } from "@/components/DashboardFilters";
 import { BarChart3 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const allData = generateDataset(1000);
 
@@ -36,7 +37,10 @@ const Index = () => {
             </div>
             <div>
               <h1 className="text-lg font-bold text-card-foreground tracking-tight">Customer Retention & Churn Analysis</h1>
-              <p className="text-xs text-muted-foreground">Subscription Business Dashboard • 1,000 Customers</p>
+              <p className="text-xs text-muted-foreground">
+                Subscription Business Dashboard •{" "}
+                <Link to="/marketing-funnel" className="underline hover:text-foreground transition-colors">Marketing Funnel →</Link>
+              </p>
             </div>
           </div>
           <DashboardFilters
