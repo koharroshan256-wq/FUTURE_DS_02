@@ -4,6 +4,7 @@ import { KPIGrid } from "@/components/KPICards";
 import { ChurnByPlanChart, ChurnPieChart, RetentionLineChart, ChurnByCountryChart, FunnelChartDisplay } from "@/components/Charts";
 import { DashboardFilters } from "@/components/DashboardFilters";
 import { BarChart3 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const allData = generateDataset(1000);
 
